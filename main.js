@@ -120,16 +120,78 @@ console.log(perimeterOfASquare(4));
 //AREA OF A CIRCLE
 function areaOfACircle(r) {
     var π = 3.14159;
-    a = π * (r**2);
+    a = π * (r ** 2);
     return a + "cm";
 }
 console.log(areaOfACircle(3));
-
+//END OF QUESTION 2
 
 
 //QUESTION NO.1
 
-// let animals = [
-//     {
+const animals = [
+    {
+        names: "cat",
+        legs: 4,
+        type: "domestic",
+        color: "brown"
+    },
+    {
+        names: "cat",
+        legs: 4,
+        type: "domestic",
+        color: "brown"
+    },
+    {
+        names: "rat",
+        legs: 4,
+        type: "domestic",
+        color: "brown"
+    },
+    {
+        names: "bat",
+        legs: 4,
+        type: "domestic",
+        color: "brown"
+    },
+    {
+        names: "cat",
+        legs: 4,
+        type: "domestic",
+        color: "brown"
+    },
 
-//     }
+    {
+        names: "cat",
+        legs: 4,
+        type: "domestic",
+        color: "brown"
+    },
+    {
+        names: "panda",
+        legs: 4,
+        type: "domestic",
+        color: "brown"
+    }
+]
+
+let cardHolder = document.querySelector('#card-holder')
+
+let html = "";
+
+animals.forEach((animal) => {
+    const { names, legs, type,color} = animal
+    // console.log(animal)
+    html += `
+    <div class="card w-25">
+    <div class="card-body">
+    <img src="./images/lloyd-henneman-mBRfYA0dYYE-unsplash.jpg" alt="" class = "img-fluid">
+        <h5>names: ${names}</h5>
+        <h5> legs: ${legs}</h5>
+        <h5>type: ${type}</h5>
+        <h5> color: ${color}</h5>
+    </div>
+</div>
+    `
+});
+cardHolder.innerHTML = html;
