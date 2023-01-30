@@ -91,7 +91,7 @@ console.log(myNewArray2);
 
 //2. fill(): is used to fill in the empty arrays created with Array() with the value specified in the brackets.
 //EG:
-var myFilledArray = Array(3).fill("boobs");
+var myFilledArray = Array(3).fill("bobas");
 console.log(myFilledArray)
 
 //:pop(): helps to remove the last item in an array
